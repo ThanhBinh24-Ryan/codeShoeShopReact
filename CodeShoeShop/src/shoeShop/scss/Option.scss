@@ -1,0 +1,41 @@
+.Option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Căn giữa chiều dọc với toàn màn hình
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column; // Đặt các mục theo chiều dọc
+      gap: 10px; // Khoảng cách giữa các mục
+    }
+  
+    li {
+      width: 200px; // Đặt chiều rộng cố định cho tất cả thẻ <a>
+  
+      a {
+        display: flex; // Sử dụng Flexbox để căn giữa nội dung trong thẻ <a>
+        justify-content: space-between; // Căn giữa theo chiều ngang
+        align-items: center; // Căn giữa theo chiều dọc
+       
+        padding: 5px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        
+        &:hover{
+        
+         
+          transform: scale(1.05); 
+          border: 1px solid rgb(32, 146, 194);
+          // Phóng to nhẹ khi hover
+        }
+      }
+    }
+  }
+  
